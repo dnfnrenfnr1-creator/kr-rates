@@ -1,0 +1,29 @@
+name: ECOS 한국 금리 받기
+
+on:
+  schedule:
+    - cron: "30 21 * * *"   # 매일 한국시간 06:30 (금리 예약 작업보다 먼저)
+  workflow_dispatch:         # Actions 탭에서 수동 실행 가능
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: ECOS 호출
+        env:
+          ECOS_KEY: ${{ secrets.ECOS_KEY }}
+        run: python scripts/fetch_ecos.py
+      - name: 바뀌었으면 커밋
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add ecos.json
+          git diff --cached --quiet || git commit -m "ECOS 갱신 $(TZ=Asia/Seoul date +%F)"
+          git push
