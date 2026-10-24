@@ -1,17 +1,7 @@
 {
- "fetched_at": "2026-10-24T08:54+09:00",
+ "fetched_at": "2026-10-25T08:29+09:00",
  "errors": [],
  "rows": [
-  {
-   "date": "2026-09-24",
-   "KR_BASE": 3.0,
-   "KR_CD91": null,
-   "KR_3Y": null,
-   "KR_10Y": null,
-   "KR_AA3Y": null,
-   "KR_BBB3Y": null,
-   "USDKRW": null
-  },
   {
    "date": "2026-09-25",
    "KR_BASE": 3.0,
