@@ -1,11 +1,7 @@
 {
- "fetched_at": "2026-10-25T21:43+09:00",
+ "fetched_at": "2026-10-25T21:35+09:00",
  "errors": [],
  "latest": {
-  "US_CPI": "2025-01",
-  "US_CORE": "2025-01",
-  "US_PPI": "2025-01",
-  "US_PPI_CORE": "2025-01",
   "KR_CPI": "2026-09",
   "KR_CORE": "2026-09",
   "KR_PPI": "2026-09"
@@ -13,850 +9,510 @@
  "rows": [
   {
    "month": "2018-01",
-   "US_CPI": 248.859,
-   "US_CORE": 255.204,
-   "US_PPI": 114.8,
-   "US_PPI_CORE": 113.8,
    "KR_CPI": 98.106,
    "KR_CORE": 97.673,
    "KR_PPI": 99.5
   },
   {
    "month": "2018-02",
-   "US_CPI": 249.529,
-   "US_CORE": 255.711,
-   "US_PPI": 115.1,
-   "US_PPI_CORE": 114.0,
    "KR_CPI": 98.855,
    "KR_CORE": 98.06,
    "KR_PPI": 99.92
   },
   {
    "month": "2018-03",
-   "US_CPI": 249.577,
-   "US_CORE": 256.271,
-   "US_PPI": 115.3,
-   "US_PPI_CORE": 114.4,
    "KR_CPI": 98.751,
    "KR_CORE": 98.248,
    "KR_PPI": 99.88
   },
   {
    "month": "2018-04",
-   "US_CPI": 250.227,
-   "US_CORE": 256.63,
-   "US_PPI": 115.5,
-   "US_PPI_CORE": 114.5,
    "KR_CPI": 98.931,
    "KR_CORE": 98.494,
    "KR_PPI": 100.01
   },
   {
    "month": "2018-05",
-   "US_CPI": 250.792,
-   "US_CORE": 257.145,
-   "US_PPI": 115.9,
-   "US_PPI_CORE": 114.8,
    "KR_CPI": 98.979,
    "KR_CORE": 98.626,
    "KR_PPI": 100.3
   },
   {
    "month": "2018-06",
-   "US_CPI": 251.018,
-   "US_CORE": 257.399,
-   "US_PPI": 116.3,
-   "US_PPI_CORE": 115.3,
    "KR_CPI": 98.779,
    "KR_CORE": 98.541,
    "KR_PPI": 100.33
   },
   {
    "month": "2018-07",
-   "US_CPI": 251.214,
-   "US_CORE": 257.699,
-   "US_PPI": 116.4,
-   "US_PPI_CORE": 115.5,
    "KR_CPI": 98.59,
    "KR_CORE": 98.305,
    "KR_PPI": 100.8
   },
   {
    "month": "2018-08",
-   "US_CPI": 251.663,
-   "US_CORE": 257.891,
-   "US_PPI": 116.5,
-   "US_PPI_CORE": 115.5,
    "KR_CPI": 99.462,
    "KR_CORE": 98.456,
    "KR_PPI": 101.25
   },
   {
    "month": "2018-09",
-   "US_CPI": 252.182,
-   "US_CORE": 258.368,
-   "US_PPI": 116.7,
-   "US_PPI_CORE": 115.6,
    "KR_CPI": 100.221,
    "KR_CORE": 98.777,
    "KR_PPI": 101.54
   },
   {
    "month": "2018-10",
-   "US_CPI": 252.772,
-   "US_CORE": 258.917,
-   "US_PPI": 117.5,
-   "US_PPI_CORE": 116.4,
    "KR_CPI": 100.041,
    "KR_CORE": 98.862,
    "KR_PPI": 101.19
   },
   {
    "month": "2018-11",
-   "US_CPI": 252.594,
-   "US_CORE": 259.439,
-   "US_PPI": 117.4,
-   "US_PPI_CORE": 116.6,
    "KR_CPI": 99.33,
    "KR_CORE": 98.692,
    "KR_PPI": 100.49
   },
   {
    "month": "2018-12",
-   "US_CPI": 252.767,
-   "US_CORE": 260.063,
-   "US_PPI": 117.4,
-   "US_PPI_CORE": 116.7,
    "KR_CPI": 98.988,
    "KR_CORE": 98.711,
    "KR_PPI": 100.0
   },
   {
    "month": "2019-01",
-   "US_CPI": 252.561,
-   "US_CORE": 260.766,
-   "US_PPI": 117.0,
-   "US_PPI_CORE": 116.7,
    "KR_CPI": 98.884,
    "KR_CORE": 98.881,
    "KR_PPI": 99.89
   },
   {
    "month": "2019-02",
-   "US_CPI": 253.319,
-   "US_CORE": 261.186,
-   "US_PPI": 117.2,
-   "US_PPI_CORE": 116.9,
    "KR_CPI": 99.311,
    "KR_CORE": 99.296,
    "KR_PPI": 99.99
   },
   {
    "month": "2019-03",
-   "US_CPI": 254.277,
-   "US_CORE": 261.567,
-   "US_PPI": 117.6,
-   "US_PPI_CORE": 117.0,
    "KR_CPI": 99.121,
    "KR_CORE": 99.164,
    "KR_PPI": 100.34
   },
   {
    "month": "2019-04",
-   "US_CPI": 255.233,
-   "US_CORE": 261.997,
-   "US_PPI": 118.2,
-   "US_PPI_CORE": 117.5,
    "KR_CPI": 99.481,
    "KR_CORE": 99.4,
    "KR_PPI": 100.63
   },
   {
    "month": "2019-05",
-   "US_CPI": 255.296,
-   "US_CORE": 262.217,
-   "US_PPI": 118.3,
-   "US_PPI_CORE": 117.7,
    "KR_CPI": 99.652,
    "KR_CORE": 99.456,
    "KR_PPI": 100.74
   },
   {
    "month": "2019-06",
-   "US_CPI": 255.213,
-   "US_CORE": 262.739,
-   "US_PPI": 118.2,
-   "US_PPI_CORE": 117.7,
    "KR_CPI": 99.491,
    "KR_CORE": 99.4,
    "KR_PPI": 100.46
   },
   {
    "month": "2019-07",
-   "US_CPI": 255.802,
-   "US_CORE": 263.28,
-   "US_PPI": 118.5,
-   "US_PPI_CORE": 118.0,
    "KR_CPI": 99.187,
    "KR_CORE": 99.239,
    "KR_PPI": 100.46
   },
   {
    "month": "2019-08",
-   "US_CPI": 256.036,
-   "US_CORE": 263.877,
-   "US_PPI": 118.6,
-   "US_PPI_CORE": 118.2,
    "KR_CPI": 99.425,
    "KR_CORE": 99.343,
    "KR_PPI": 100.69
   },
   {
    "month": "2019-09",
-   "US_CPI": 256.43,
-   "US_CORE": 264.388,
-   "US_PPI": 118.3,
-   "US_PPI_CORE": 117.9,
    "KR_CPI": 99.794,
    "KR_CORE": 99.372,
    "KR_PPI": 100.75
   },
   {
    "month": "2019-10",
-   "US_CPI": 257.155,
-   "US_CORE": 264.97,
-   "US_PPI": 118.8,
-   "US_PPI_CORE": 118.2,
    "KR_CPI": 100.041,
    "KR_CORE": 99.617,
    "KR_PPI": 100.51
   },
   {
    "month": "2019-11",
-   "US_CPI": 257.879,
-   "US_CORE": 265.548,
-   "US_PPI": 118.6,
-   "US_PPI_CORE": 118.0,
    "KR_CPI": 99.481,
    "KR_CORE": 99.315,
    "KR_PPI": 100.37
   },
   {
    "month": "2019-12",
-   "US_CPI": 258.63,
-   "US_CORE": 266.02,
-   "US_PPI": 119.0,
-   "US_PPI_CORE": 118.2,
    "KR_CPI": 99.719,
    "KR_CORE": 99.438,
    "KR_PPI": 100.65
   },
   {
    "month": "2020-01",
-   "US_CPI": 259.127,
-   "US_CORE": 266.716,
-   "US_PPI": 119.2,
-   "US_PPI_CORE": 118.6,
    "KR_CPI": 100.09,
    "KR_CORE": 99.59,
    "KR_PPI": 101.02
   },
   {
    "month": "2020-02",
-   "US_CPI": 259.25,
-   "US_CORE": 267.37,
-   "US_PPI": 118.6,
-   "US_PPI_CORE": 118.2,
    "KR_CPI": 100.16,
    "KR_CORE": 99.77,
    "KR_PPI": 100.69
   },
   {
    "month": "2020-03",
-   "US_CPI": 258.076,
-   "US_CORE": 267.054,
-   "US_PPI": 118.0,
-   "US_PPI_CORE": 118.3,
    "KR_CPI": 99.94,
    "KR_CORE": 99.67,
    "KR_PPI": 99.8
   },
   {
    "month": "2020-04",
-   "US_CPI": 256.032,
-   "US_CORE": 265.746,
-   "US_PPI": 116.6,
-   "US_PPI_CORE": 117.9,
    "KR_CPI": 99.5,
    "KR_CORE": 99.73,
    "KR_PPI": 98.93
   },
   {
    "month": "2020-05",
-   "US_CPI": 255.802,
-   "US_CORE": 265.412,
-   "US_PPI": 117.2,
-   "US_PPI_CORE": 117.9,
    "KR_CPI": 99.44,
    "KR_CORE": 100.02,
    "KR_PPI": 98.96
   },
   {
    "month": "2020-06",
-   "US_CPI": 257.042,
-   "US_CORE": 265.849,
-   "US_PPI": 117.5,
-   "US_PPI_CORE": 118.1,
    "KR_CPI": 99.71,
    "KR_CORE": 100.18,
    "KR_PPI": 99.47
   },
   {
    "month": "2020-07",
-   "US_CPI": 258.352,
-   "US_CORE": 267.389,
-   "US_PPI": 118.2,
-   "US_PPI_CORE": 118.7,
    "KR_CPI": 99.63,
    "KR_CORE": 99.96,
    "KR_PPI": 99.69
   },
   {
    "month": "2020-08",
-   "US_CPI": 259.316,
-   "US_CORE": 268.422,
-   "US_PPI": 118.4,
-   "US_PPI_CORE": 118.8,
    "KR_CPI": 100.19,
    "KR_CORE": 100.13,
    "KR_PPI": 100.18
   },
   {
    "month": "2020-09",
-   "US_CPI": 259.997,
-   "US_CORE": 268.933,
-   "US_PPI": 118.8,
-   "US_PPI_CORE": 119.1,
    "KR_CPI": 100.74,
    "KR_CORE": 100.28,
    "KR_PPI": 100.38
   },
   {
    "month": "2020-10",
-   "US_CPI": 260.319,
-   "US_CORE": 269.306,
-   "US_PPI": 119.4,
-   "US_PPI_CORE": 119.7,
    "KR_CPI": 100.18,
    "KR_CORE": 99.82,
    "KR_PPI": 99.98
   },
   {
    "month": "2020-11",
-   "US_CPI": 260.911,
-   "US_CORE": 269.981,
-   "US_PPI": 119.5,
-   "US_PPI_CORE": 119.7,
    "KR_CPI": 100.09,
    "KR_CORE": 100.36,
    "KR_PPI": 100.06
   },
   {
    "month": "2020-12",
-   "US_CPI": 262.045,
-   "US_CORE": 270.341,
-   "US_PPI": 120.0,
-   "US_PPI_CORE": 119.9,
    "KR_CPI": 100.33,
    "KR_CORE": 100.5,
    "KR_PPI": 100.84
   },
   {
    "month": "2021-01",
-   "US_CPI": 262.639,
-   "US_CORE": 270.416,
-   "US_PPI": 121.2,
-   "US_PPI_CORE": 120.9,
    "KR_CPI": 101.04,
    "KR_CORE": 100.77,
    "KR_PPI": 101.96
   },
   {
    "month": "2021-02",
-   "US_CPI": 263.573,
-   "US_CORE": 270.776,
-   "US_PPI": 122.0,
-   "US_PPI_CORE": 121.3,
    "KR_CPI": 101.58,
    "KR_CORE": 100.95,
    "KR_PPI": 102.8
   },
   {
    "month": "2021-03",
-   "US_CPI": 264.847,
-   "US_CORE": 271.453,
-   "US_PPI": 122.8,
-   "US_PPI_CORE": 121.9,
    "KR_CPI": 101.84,
    "KR_CORE": 101.1,
    "KR_PPI": 103.89
   },
   {
    "month": "2021-04",
-   "US_CPI": 266.625,
-   "US_CORE": 273.626,
-   "US_PPI": 124.1,
-   "US_PPI_CORE": 123.2,
    "KR_CPI": 101.98,
    "KR_CORE": 101.33,
    "KR_PPI": 104.88
   },
   {
    "month": "2021-05",
-   "US_CPI": 268.404,
-   "US_CORE": 275.457,
-   "US_PPI": 125.3,
-   "US_PPI_CORE": 124.2,
    "KR_CPI": 102.05,
    "KR_CORE": 101.57,
    "KR_PPI": 105.45
   },
   {
    "month": "2021-06",
-   "US_CPI": 270.71,
-   "US_CORE": 277.608,
-   "US_PPI": 126.2,
-   "US_PPI_CORE": 125.0,
    "KR_CPI": 102.05,
    "KR_CORE": 101.67,
    "KR_PPI": 106.01
   },
   {
    "month": "2021-07",
-   "US_CPI": 271.965,
-   "US_CORE": 278.639,
-   "US_PPI": 127.484,
-   "US_PPI_CORE": 126.248,
    "KR_CPI": 102.26,
    "KR_CORE": 101.73,
    "KR_PPI": 107.04
   },
   {
    "month": "2021-08",
-   "US_CPI": 272.752,
-   "US_CORE": 279.021,
-   "US_PPI": 128.591,
-   "US_PPI_CORE": 127.228,
    "KR_CPI": 102.75,
    "KR_CORE": 102.01,
    "KR_PPI": 107.6
   },
   {
    "month": "2021-09",
-   "US_CPI": 273.942,
-   "US_CORE": 279.727,
-   "US_PPI": 129.234,
-   "US_PPI_CORE": 127.473,
    "KR_CPI": 103.17,
    "KR_CORE": 102.26,
    "KR_PPI": 108.0
   },
   {
    "month": "2021-10",
-   "US_CPI": 276.528,
-   "US_CORE": 281.649,
-   "US_PPI": 130.037,
-   "US_PPI_CORE": 128.043,
    "KR_CPI": 103.35,
    "KR_CORE": 102.58,
    "KR_PPI": 109.12
   },
   {
    "month": "2021-11",
-   "US_CPI": 278.824,
-   "US_CORE": 283.411,
-   "US_PPI": 131.404,
-   "US_PPI_CORE": 129.357,
    "KR_CPI": 103.87,
    "KR_CORE": 102.81,
    "KR_PPI": 109.9
   },
   {
    "month": "2021-12",
-   "US_CPI": 280.806,
-   "US_CORE": 285.221,
-   "US_PPI": 132.252,
-   "US_PPI_CORE": 130.273,
    "KR_CPI": 104.04,
    "KR_CORE": 103.25,
    "KR_PPI": 109.88
   },
   {
    "month": "2022-01",
-   "US_CPI": 282.542,
-   "US_CORE": 286.799,
-   "US_PPI": 133.579,
-   "US_PPI_CORE": 131.345,
    "KR_CPI": 104.85,
    "KR_CORE": 103.83,
    "KR_PPI": 111.04
   },
   {
    "month": "2022-02",
-   "US_CPI": 284.525,
-   "US_CORE": 288.256,
-   "US_PPI": 134.79,
-   "US_PPI_CORE": 132.097,
    "KR_CPI": 105.42,
    "KR_CORE": 104.27,
    "KR_PPI": 111.57
   },
   {
    "month": "2022-03",
-   "US_CPI": 287.467,
-   "US_CORE": 289.044,
-   "US_PPI": 137.041,
-   "US_PPI_CORE": 133.714,
    "KR_CPI": 106.1,
    "KR_CORE": 104.42,
    "KR_PPI": 113.27
   },
   {
    "month": "2022-04",
-   "US_CPI": 288.582,
-   "US_CORE": 290.474,
-   "US_PPI": 137.792,
-   "US_PPI_CORE": 134.307,
    "KR_CPI": 106.83,
    "KR_CORE": 104.97,
    "KR_PPI": 115.1
   },
   {
    "month": "2022-05",
-   "US_CPI": 291.299,
-   "US_CORE": 292.039,
-   "US_PPI": 139.044,
-   "US_PPI_CORE": 134.957,
    "KR_CPI": 107.5,
    "KR_CORE": 105.66,
    "KR_PPI": 115.92
   },
   {
    "month": "2022-06",
-   "US_CPI": 295.072,
-   "US_CORE": 294.009,
-   "US_PPI": 140.256,
-   "US_PPI_CORE": 135.305,
    "KR_CPI": 108.21,
    "KR_CORE": 106.15,
    "KR_PPI": 116.57
   },
   {
    "month": "2022-07",
-   "US_CPI": 294.94,
-   "US_CORE": 295.08,
-   "US_PPI": 139.823,
-   "US_PPI_CORE": 135.844,
    "KR_CPI": 108.73,
    "KR_CORE": 106.35,
    "KR_PPI": 116.9
   },
   {
    "month": "2022-08",
-   "US_CPI": 295.162,
-   "US_CORE": 296.582,
-   "US_PPI": 139.739,
-   "US_PPI_CORE": 136.4,
    "KR_CPI": 108.63,
    "KR_CORE": 106.62,
    "KR_PPI": 116.45
   },
   {
    "month": "2022-09",
-   "US_CPI": 296.421,
-   "US_CORE": 298.281,
-   "US_PPI": 140.212,
-   "US_PPI_CORE": 136.618,
    "KR_CPI": 108.82,
    "KR_CORE": 106.86,
    "KR_PPI": 116.53
   },
   {
    "month": "2022-10",
-   "US_CPI": 297.979,
-   "US_CORE": 299.381,
-   "US_PPI": 140.647,
-   "US_PPI_CORE": 136.913,
    "KR_CPI": 109.16,
    "KR_CORE": 107.45,
    "KR_PPI": 117.13
   },
   {
    "month": "2022-11",
-   "US_CPI": 298.708,
-   "US_CORE": 300.316,
-   "US_PPI": 141.075,
-   "US_PPI_CORE": 137.449,
    "KR_CPI": 109.07,
    "KR_CORE": 107.72,
    "KR_PPI": 116.75
   },
   {
    "month": "2022-12",
-   "US_CPI": 298.808,
-   "US_CORE": 301.433,
-   "US_PPI": 140.707,
-   "US_PPI_CORE": 137.722,
    "KR_CPI": 109.26,
    "KR_CORE": 108.08,
    "KR_PPI": 116.27
   },
   {
    "month": "2023-01",
-   "US_CPI": 300.456,
-   "US_CORE": 302.685,
-   "US_PPI": 141.306,
-   "US_PPI_CORE": 137.978,
    "KR_CPI": 110.07,
    "KR_CORE": 108.84,
    "KR_PPI": 116.69
   },
   {
    "month": "2023-02",
-   "US_CPI": 301.476,
-   "US_CORE": 304.097,
-   "US_PPI": 141.187,
-   "US_PPI_CORE": 138.29,
    "KR_CPI": 110.33,
    "KR_CORE": 109.14,
    "KR_PPI": 116.91
   },
   {
    "month": "2023-03",
-   "US_CPI": 301.643,
-   "US_CORE": 305.123,
-   "US_PPI": 140.743,
-   "US_PPI_CORE": 138.24,
    "KR_CPI": 110.52,
    "KR_CORE": 109.33,
    "KR_PPI": 117.05
   },
   {
    "month": "2023-04",
-   "US_CPI": 302.858,
-   "US_CORE": 306.49,
-   "US_PPI": 140.97,
-   "US_PPI_CORE": 138.559,
    "KR_CPI": 110.77,
    "KR_CORE": 109.7,
    "KR_PPI": 116.96
   },
   {
    "month": "2023-05",
-   "US_CPI": 303.316,
-   "US_CORE": 307.623,
-   "US_PPI": 140.667,
-   "US_PPI_CORE": 138.752,
    "KR_CPI": 111.13,
    "KR_CORE": 110.17,
    "KR_PPI": 116.53
   },
   {
    "month": "2023-06",
-   "US_CPI": 304.099,
-   "US_CORE": 308.291,
-   "US_PPI": 140.673,
-   "US_PPI_CORE": 138.7,
    "KR_CPI": 111.16,
    "KR_CORE": 110.4,
    "KR_PPI": 116.27
   },
   {
    "month": "2023-07",
-   "US_CPI": 304.615,
-   "US_CORE": 308.959,
-   "US_PPI": 141.443,
-   "US_PPI_CORE": 139.522,
    "KR_CPI": 111.29,
    "KR_CORE": 110.36,
    "KR_PPI": 116.53
   },
   {
    "month": "2023-08",
-   "US_CPI": 306.138,
-   "US_CORE": 309.646,
-   "US_PPI": 142.367,
-   "US_PPI_CORE": 139.788,
    "KR_CPI": 112.28,
    "KR_CORE": 110.6,
    "KR_PPI": 117.5
   },
   {
    "month": "2023-09",
-   "US_CPI": 307.374,
-   "US_CORE": 310.616,
-   "US_PPI": 142.737,
-   "US_PPI_CORE": 139.761,
    "KR_CPI": 112.85,
    "KR_CORE": 110.83,
    "KR_PPI": 118.03
   },
   {
    "month": "2023-10",
-   "US_CPI": 307.653,
-   "US_CORE": 311.433,
-   "US_PPI": 142.202,
-   "US_PPI_CORE": 139.862,
    "KR_CPI": 113.27,
    "KR_CORE": 111.28,
    "KR_PPI": 117.86
   },
   {
    "month": "2023-11",
-   "US_CPI": 308.087,
-   "US_CORE": 312.373,
-   "US_PPI": 142.26,
-   "US_PPI_CORE": 140.104,
    "KR_CPI": 112.68,
    "KR_CORE": 111.21,
    "KR_PPI": 117.41
   },
   {
    "month": "2023-12",
-   "US_CPI": 308.735,
-   "US_CORE": 313.23,
-   "US_PPI": 142.206,
-   "US_PPI_CORE": 140.174,
    "KR_CPI": 112.73,
    "KR_CORE": 111.4,
    "KR_PPI": 117.56
   },
   {
    "month": "2024-01",
-   "US_CPI": 309.794,
-   "US_CORE": 314.389,
-   "US_PPI": 142.713,
-   "US_PPI_CORE": 140.757,
    "KR_CPI": 113.17,
    "KR_CORE": 111.72,
    "KR_PPI": 118.19
   },
   {
    "month": "2024-02",
-   "US_CPI": 311.022,
-   "US_CORE": 315.555,
-   "US_PPI": 143.432,
-   "US_PPI_CORE": 141.2,
    "KR_CPI": 113.78,
    "KR_CORE": 111.97,
    "KR_PPI": 118.55
   },
   {
    "month": "2024-03",
-   "US_CPI": 312.107,
-   "US_CORE": 316.762,
-   "US_PPI": 143.513,
-   "US_PPI_CORE": 141.375,
    "KR_CPI": 113.95,
    "KR_CORE": 112.0,
    "KR_PPI": 118.82
   },
   {
    "month": "2024-04",
-   "US_CPI": 313.016,
-   "US_CORE": 317.596,
-   "US_PPI": 144.208,
-   "US_PPI_CORE": 142.07,
    "KR_CPI": 114.01,
    "KR_CORE": 112.18,
    "KR_PPI": 119.16
   },
   {
    "month": "2024-05",
-   "US_CPI": 313.14,
-   "US_CORE": 318.053,
-   "US_PPI": 144.255,
-   "US_PPI_CORE": 142.479,
    "KR_CPI": 114.1,
    "KR_CORE": 112.42,
    "KR_PPI": 119.25
   },
   {
    "month": "2024-06",
-   "US_CPI": 313.131,
-   "US_CORE": 318.343,
-   "US_PPI": 144.829,
-   "US_PPI_CORE": 143.245,
    "KR_CPI": 113.84,
    "KR_CORE": 112.56,
    "KR_PPI": 119.23
   },
   {
    "month": "2024-07",
-   "US_CPI": 313.566,
-   "US_CORE": 318.933,
-   "US_PPI": 144.869,
-   "US_PPI_CORE": 143.137,
    "KR_CPI": 114.13,
    "KR_CORE": 112.67,
    "KR_PPI": 119.56
   },
   {
    "month": "2024-08",
-   "US_CPI": 314.131,
-   "US_CORE": 319.839,
-   "US_PPI": 145.36,
-   "US_PPI_CORE": 143.756,
    "KR_CPI": 114.54,
    "KR_CORE": 112.75,
    "KR_PPI": 119.38
   },
   {
    "month": "2024-09",
-   "US_CPI": 314.851,
-   "US_CORE": 320.835,
-   "US_PPI": 145.792,
-   "US_PPI_CORE": 144.376,
    "KR_CPI": 114.65,
    "KR_CORE": 112.87,
    "KR_PPI": 119.16
   },
   {
    "month": "2024-10",
-   "US_CPI": 315.564,
-   "US_CORE": 321.688,
-   "US_PPI": 146.055,
-   "US_PPI_CORE": 144.69,
    "KR_CPI": 114.69,
    "KR_CORE": 113.16,
    "KR_PPI": 119.01
   },
   {
    "month": "2024-11",
-   "US_CPI": 316.449,
-   "US_CORE": 322.619,
-   "US_PPI": 146.397,
-   "US_PPI_CORE": 144.849,
    "KR_CPI": 114.4,
    "KR_CORE": 113.19,
    "KR_PPI": 119.1
   },
   {
    "month": "2024-12",
-   "US_CPI": 317.603,
-   "US_CORE": 323.296,
-   "US_PPI": 147.127,
-   "US_PPI_CORE": 145.432,
    "KR_CPI": 114.91,
    "KR_CORE": 113.46,
    "KR_PPI": 119.52
   },
   {
    "month": "2025-01",
-   "US_CPI": 319.086,
-   "US_CORE": 324.739,
-   "US_PPI": 147.716,
-   "US_PPI_CORE": 145.835,
    "KR_CPI": 115.71,
    "KR_CORE": 113.98,
    "KR_PPI": 120.27
@@ -865,201 +521,121 @@
    "month": "2025-02",
    "KR_CPI": 116.08,
    "KR_CORE": 114.12,
-   "KR_PPI": 120.33,
-   "US_CPI": null,
-   "US_CORE": null,
-   "US_PPI": null,
-   "US_PPI_CORE": null
+   "KR_PPI": 120.33
   },
   {
    "month": "2025-03",
    "KR_CPI": 116.29,
    "KR_CORE": 114.37,
-   "KR_PPI": 120.36,
-   "US_CPI": null,
-   "US_CORE": null,
-   "US_PPI": null,
-   "US_PPI_CORE": null
+   "KR_PPI": 120.36
   },
   {
    "month": "2025-04",
    "KR_CPI": 116.38,
    "KR_CORE": 114.86,
-   "KR_PPI": 120.14,
-   "US_CPI": null,
-   "US_CORE": null,
-   "US_PPI": null,
-   "US_PPI_CORE": null
+   "KR_PPI": 120.14
   },
   {
    "month": "2025-05",
    "KR_CPI": 116.27,
    "KR_CORE": 115.06,
-   "KR_PPI": 119.64,
-   "US_CPI": null,
-   "US_CORE": null,
-   "US_PPI": null,
-   "US_PPI_CORE": null
+   "KR_PPI": 119.64
   },
   {
    "month": "2025-06",
    "KR_CPI": 116.31,
    "KR_CORE": 115.25,
-   "KR_PPI": 119.77,
-   "US_CPI": null,
-   "US_CORE": null,
-   "US_PPI": null,
-   "US_PPI_CORE": null
+   "KR_PPI": 119.77
   },
   {
    "month": "2025-07",
    "KR_CPI": 116.52,
    "KR_CORE": 115.29,
-   "KR_PPI": 120.19,
-   "US_CPI": null,
-   "US_CORE": null,
-   "US_PPI": null,
-   "US_PPI_CORE": null
+   "KR_PPI": 120.19
   },
   {
    "month": "2025-08",
    "KR_CPI": 116.45,
    "KR_CORE": 114.84,
-   "KR_PPI": 120.11,
-   "US_CPI": null,
-   "US_CORE": null,
-   "US_PPI": null,
-   "US_PPI_CORE": null
+   "KR_PPI": 120.11
   },
   {
    "month": "2025-09",
    "KR_CPI": 117.06,
    "KR_CORE": 115.56,
-   "KR_PPI": 120.54,
-   "US_CPI": null,
-   "US_CORE": null,
-   "US_PPI": null,
-   "US_PPI_CORE": null
+   "KR_PPI": 120.54
   },
   {
    "month": "2025-10",
    "KR_CPI": 117.42,
    "KR_CORE": 116.0,
-   "KR_PPI": 120.94,
-   "US_CPI": null,
-   "US_CORE": null,
-   "US_PPI": null,
-   "US_PPI_CORE": null
+   "KR_PPI": 120.94
   },
   {
    "month": "2025-11",
    "KR_CPI": 117.2,
    "KR_CORE": 115.82,
-   "KR_PPI": 121.31,
-   "US_CPI": null,
-   "US_CORE": null,
-   "US_PPI": null,
-   "US_PPI_CORE": null
+   "KR_PPI": 121.31
   },
   {
    "month": "2025-12",
    "KR_CPI": 117.57,
    "KR_CORE": 116.02,
-   "KR_PPI": 121.76,
-   "US_CPI": null,
-   "US_CORE": null,
-   "US_PPI": null,
-   "US_PPI_CORE": null
+   "KR_PPI": 121.76
   },
   {
    "month": "2026-01",
    "KR_CPI": 118.03,
    "KR_CORE": 116.56,
-   "KR_PPI": 122.56,
-   "US_CPI": null,
-   "US_CORE": null,
-   "US_PPI": null,
-   "US_PPI_CORE": null
+   "KR_PPI": 122.56
   },
   {
    "month": "2026-02",
    "KR_CPI": 118.4,
    "KR_CORE": 116.93,
-   "KR_PPI": 123.28,
-   "US_CPI": null,
-   "US_CORE": null,
-   "US_PPI": null,
-   "US_PPI_CORE": null
+   "KR_PPI": 123.28
   },
   {
    "month": "2026-03",
    "KR_CPI": 118.8,
    "KR_CORE": 117.0,
-   "KR_PPI": 125.35,
-   "US_CPI": null,
-   "US_CORE": null,
-   "US_PPI": null,
-   "US_PPI_CORE": null
+   "KR_PPI": 125.35
   },
   {
    "month": "2026-04",
    "KR_CPI": 119.37,
    "KR_CORE": 117.38,
-   "KR_PPI": 128.75,
-   "US_CPI": null,
-   "US_CORE": null,
-   "US_PPI": null,
-   "US_PPI_CORE": null
+   "KR_PPI": 128.75
   },
   {
    "month": "2026-05",
    "KR_CPI": 119.92,
    "KR_CORE": 117.97,
-   "KR_PPI": 129.98,
-   "US_CPI": null,
-   "US_CORE": null,
-   "US_PPI": null,
-   "US_PPI_CORE": null
+   "KR_PPI": 129.98
   },
   {
    "month": "2026-06",
    "KR_CPI": 119.99,
    "KR_CORE": 118.06,
-   "KR_PPI": 129.92,
-   "US_CPI": null,
-   "US_CORE": null,
-   "US_PPI": null,
-   "US_PPI_CORE": null
+   "KR_PPI": 129.92
   },
   {
    "month": "2026-07",
    "KR_CPI": 119.77,
    "KR_CORE": 118.18,
-   "KR_PPI": 129.43,
-   "US_CPI": null,
-   "US_CORE": null,
-   "US_PPI": null,
-   "US_PPI_CORE": null
+   "KR_PPI": 129.43
   },
   {
    "month": "2026-08",
    "KR_CPI": 120.05,
    "KR_CORE": 118.42,
-   "KR_PPI": 129.58,
-   "US_CPI": null,
-   "US_CORE": null,
-   "US_PPI": null,
-   "US_PPI_CORE": null
+   "KR_PPI": 129.58
   },
   {
    "month": "2026-09",
    "KR_CPI": 120.43,
    "KR_CORE": 118.71,
-   "KR_PPI": 129.78,
-   "US_CPI": null,
-   "US_CORE": null,
-   "US_PPI": null,
-   "US_PPI_CORE": null
+   "KR_PPI": 129.78
   }
  ]
 }
