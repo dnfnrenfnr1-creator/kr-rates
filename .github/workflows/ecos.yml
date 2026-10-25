@@ -20,7 +20,7 @@ jobs:
         env:
           ECOS_KEY: ${{ secrets.ECOS_KEY }}
         run: python scripts/fetch_ecos.py
-      - name: 물가지수 (미국 FRED·한국 ECOS 월별)
+      - name: 물가지수 (미국 BLS·한국 ECOS 월별)
         continue-on-error: true
         env:
           ECOS_KEY: ${{ secrets.ECOS_KEY }}

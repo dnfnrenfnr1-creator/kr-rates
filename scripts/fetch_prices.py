@@ -1,15 +1,16 @@
-"""미국(FRED)·한국(ECOS) 월별 물가지수를 받아 prices.json으로 저장.
+"""미국(BLS)·한국(ECOS) 월별 물가지수를 받아 prices.json으로 저장.
 
 지수 레벨만 저장하고, 전년비·전월비는 대시보드에서 계산한다.
-- 미국: CPI(CPIAUCSL), 근원 CPI(CPILFESL), PPI 최종수요(PPIFIS), 근원 PPI(PPIFES) — 계절조정
+- 미국(BLS API): CPI 전체(CUSR0000SA0), 근원 CPI(CUSR0000SA0L1E), PPI 최종수요(WPSFD4), 근원 PPI 식품·에너지 제외(WPSFD49104) — 계절조정
 - 한국: 소비자물가 총지수, 농산물·석유류 제외(근원), 생산자물가 총지수 — 원계열
 """
 import csv, io, json, os, sys, urllib.request, datetime as dt
 from zoneinfo import ZoneInfo
 
 START = "2018-01"
-US = {"US_CPI": "CPIAUCSL", "US_CORE": "CPILFESL", "US_PPI": "PPIFIS", "US_PPI_CORE": "PPIFES"}
-KR = {"KR_CPI": ("901Y009", "0"), "KR_CORE": ("901Y009", "QB"), "KR_PPI": ("404Y014", "*AA")}
+US = {"US_CPI": "CUSR0000SA0", "US_CORE": "CUSR0000SA0L1E", "US_PPI": "WPSFD4", "US_PPI_CORE": "WPSFD49104"}
+KR = {"KR_CPI": ("901Y009", "0"), "KR_CORE": ("901Y009", None), "KR_PPI": ("404Y014", "*AA")}
+CORE_NAME = "농산물및석유류제외"  # 901Y009 안에서 이 이름의 항목 코드를 찾아 씀
 COLS = list(US) + list(KR)
 
 rows, errors = {}, []
@@ -29,23 +30,41 @@ def get(url):
         return r.read().decode("utf-8")
 
 
-for col, sid in US.items():
-    try:
-        text = get(f"https://fred.stlouisfed.org/graph/fredgraph.csv?id={sid}&cosd={START}-01")
-        n = 0
-        for r in csv.reader(io.StringIO(text)):
-            if len(r) >= 2 and r[0][:4].isdigit():
-                put(r[0][:7], col, r[1]); n += 1
-        if not n:
+try:
+    body = json.dumps({"seriesid": list(US.values()), "startyear": START[:4],
+                       "endyear": str(dt.date.today().year)}).encode()
+    req = urllib.request.Request("https://api.bls.gov/publicAPI/v1/timeseries/data/", data=body,
+                                 headers={"Content-Type": "application/json", "User-Agent": "kr-rates"})
+    with urllib.request.urlopen(req, timeout=60) as r:
+        res = json.load(r)
+    if res.get("status") != "REQUEST_SUCCEEDED":
+        errors.append(f"BLS: {res.get('status')} {res.get('message')}")
+    by_id = {s["seriesID"]: s.get("data", []) for s in res.get("Results", {}).get("series", [])}
+    for col, sid in US.items():
+        data = by_id.get(sid, [])
+        if not data:
             errors.append(f"{col}: no rows")
-    except Exception as e:
-        errors.append(f"{col}: {e}")
+        for x in data:
+            if x.get("period", "").startswith("M") and x["period"] != "M13":
+                put(f"{x['year']}-{x['period'][1:]}", col, x.get("value"))
+except Exception as e:
+    errors.append(f"BLS: {e}")
 
 key = os.environ.get("ECOS_KEY")
 end = dt.datetime.now(ZoneInfo("Asia/Seoul")).strftime("%Y%m")
 for col, (stat, item) in KR.items():
     if not key:
         errors.append(f"{col}: no ECOS_KEY"); continue
+    if item is None:
+        try:
+            lst = json.loads(get(f"https://ecos.bok.or.kr/api/StatisticItemList/{key}/json/kr/1/1000/{stat}"))
+            for it in lst.get("StatisticItemList", {}).get("row", []):
+                if CORE_NAME in it.get("ITEM_NAME", "").replace(" ", "") and it.get("CYCLE") in (None, "M"):
+                    item = it["ITEM_CODE"]; break
+        except Exception as e:
+            errors.append(f"{col}: item lookup {type(e).__name__}")
+        if item is None:
+            errors.append(f"{col}: item code not found"); continue
     url = f"https://ecos.bok.or.kr/api/StatisticSearch/{key}/json/kr/1/1000/{stat}/M/{START.replace('-', '')}/{end}/{item}"
     try:
         body = json.loads(get(url))
