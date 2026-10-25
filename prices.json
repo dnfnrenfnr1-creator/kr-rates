@@ -1,0 +1,1071 @@
+{
+ "fetched_at": "2026-10-25T21:31+09:00",
+ "errors": [
+  "US_CPI: The read operation timed out",
+  "US_CORE: The read operation timed out",
+  "US_PPI: The read operation timed out",
+  "US_PPI_CORE: The read operation timed out",
+  "KR_CORE: 해당하는 데이터가 없습니다."
+ ],
+ "latest": {
+  "US_CPI": null,
+  "US_CORE": null,
+  "US_PPI": null,
+  "US_PPI_CORE": null,
+  "KR_CPI": "2026-09",
+  "KR_CORE": null,
+  "KR_PPI": "2026-09"
+ },
+ "rows": [
+  {
+   "month": "2018-01",
+   "KR_CPI": 98.106,
+   "KR_PPI": 99.5,
+   "US_CPI": null,
+   "US_CORE": null,
+   "US_PPI": null,
+   "US_PPI_CORE": null,
+   "KR_CORE": null
+  },
+  {
+   "month": "2018-02",
+   "KR_CPI": 98.855,
+   "KR_PPI": 99.92,
+   "US_CPI": null,
+   "US_CORE": null,
+   "US_PPI": null,
+   "US_PPI_CORE": null,
+   "KR_CORE": null
+  },
+  {
+   "month": "2018-03",
+   "KR_CPI": 98.751,
+   "KR_PPI": 99.88,
+   "US_CPI": null,
+   "US_CORE": null,
+   "US_PPI": null,
+   "US_PPI_CORE": null,
+   "KR_CORE": null
+  },
+  {
+   "month": "2018-04",
+   "KR_CPI": 98.931,
+   "KR_PPI": 100.01,
+   "US_CPI": null,
+   "US_CORE": null,
+   "US_PPI": null,
+   "US_PPI_CORE": null,
+   "KR_CORE": null
+  },
+  {
+   "month": "2018-05",
+   "KR_CPI": 98.979,
+   "KR_PPI": 100.3,
+   "US_CPI": null,
+   "US_CORE": null,
+   "US_PPI": null,
+   "US_PPI_CORE": null,
+   "KR_CORE": null
+  },
+  {
+   "month": "2018-06",
+   "KR_CPI": 98.779,
+   "KR_PPI": 100.33,
+   "US_CPI": null,
+   "US_CORE": null,
+   "US_PPI": null,
+   "US_PPI_CORE": null,
+   "KR_CORE": null
+  },
+  {
+   "month": "2018-07",
+   "KR_CPI": 98.59,
+   "KR_PPI": 100.8,
+   "US_CPI": null,
+   "US_CORE": null,
+   "US_PPI": null,
+   "US_PPI_CORE": null,
+   "KR_CORE": null
+  },
+  {
+   "month": "2018-08",
+   "KR_CPI": 99.462,
+   "KR_PPI": 101.25,
+   "US_CPI": null,
+   "US_CORE": null,
+   "US_PPI": null,
+   "US_PPI_CORE": null,
+   "KR_CORE": null
+  },
+  {
+   "month": "2018-09",
+   "KR_CPI": 100.221,
+   "KR_PPI": 101.54,
+   "US_CPI": null,
+   "US_CORE": null,
+   "US_PPI": null,
+   "US_PPI_CORE": null,
+   "KR_CORE": null
+  },
+  {
+   "month": "2018-10",
+   "KR_CPI": 100.041,
+   "KR_PPI": 101.19,
+   "US_CPI": null,
+   "US_CORE": null,
+   "US_PPI": null,
+   "US_PPI_CORE": null,
+   "KR_CORE": null
+  },
+  {
+   "month": "2018-11",
+   "KR_CPI": 99.33,
+   "KR_PPI": 100.49,
+   "US_CPI": null,
+   "US_CORE": null,
+   "US_PPI": null,
+   "US_PPI_CORE": null,
+   "KR_CORE": null
+  },
+  {
+   "month": "2018-12",
+   "KR_CPI": 98.988,
+   "KR_PPI": 100.0,
+   "US_CPI": null,
+   "US_CORE": null,
+   "US_PPI": null,
+   "US_PPI_CORE": null,
+   "KR_CORE": null
+  },
+  {
+   "month": "2019-01",
+   "KR_CPI": 98.884,
+   "KR_PPI": 99.89,
+   "US_CPI": null,
+   "US_CORE": null,
+   "US_PPI": null,
+   "US_PPI_CORE": null,
+   "KR_CORE": null
+  },
+  {
+   "month": "2019-02",
+   "KR_CPI": 99.311,
+   "KR_PPI": 99.99,
+   "US_CPI": null,
+   "US_CORE": null,
+   "US_PPI": null,
+   "US_PPI_CORE": null,
+   "KR_CORE": null
+  },
+  {
+   "month": "2019-03",
+   "KR_CPI": 99.121,
+   "KR_PPI": 100.34,
+   "US_CPI": null,
+   "US_CORE": null,
+   "US_PPI": null,
+   "US_PPI_CORE": null,
+   "KR_CORE": null
+  },
+  {
+   "month": "2019-04",
+   "KR_CPI": 99.481,
+   "KR_PPI": 100.63,
+   "US_CPI": null,
+   "US_CORE": null,
+   "US_PPI": null,
+   "US_PPI_CORE": null,
+   "KR_CORE": null
+  },
+  {
+   "month": "2019-05",
+   "KR_CPI": 99.652,
+   "KR_PPI": 100.74,
+   "US_CPI": null,
+   "US_CORE": null,
+   "US_PPI": null,
+   "US_PPI_CORE": null,
+   "KR_CORE": null
+  },
+  {
+   "month": "2019-06",
+   "KR_CPI": 99.491,
+   "KR_PPI": 100.46,
+   "US_CPI": null,
+   "US_CORE": null,
+   "US_PPI": null,
+   "US_PPI_CORE": null,
+   "KR_CORE": null
+  },
+  {
+   "month": "2019-07",
+   "KR_CPI": 99.187,
+   "KR_PPI": 100.46,
+   "US_CPI": null,
+   "US_CORE": null,
+   "US_PPI": null,
+   "US_PPI_CORE": null,
+   "KR_CORE": null
+  },
+  {
+   "month": "2019-08",
+   "KR_CPI": 99.425,
+   "KR_PPI": 100.69,
+   "US_CPI": null,
+   "US_CORE": null,
+   "US_PPI": null,
+   "US_PPI_CORE": null,
+   "KR_CORE": null
+  },
+  {
+   "month": "2019-09",
+   "KR_CPI": 99.794,
+   "KR_PPI": 100.75,
+   "US_CPI": null,
+   "US_CORE": null,
+   "US_PPI": null,
+   "US_PPI_CORE": null,
+   "KR_CORE": null
+  },
+  {
+   "month": "2019-10",
+   "KR_CPI": 100.041,
+   "KR_PPI": 100.51,
+   "US_CPI": null,
+   "US_CORE": null,
+   "US_PPI": null,
+   "US_PPI_CORE": null,
+   "KR_CORE": null
+  },
+  {
+   "month": "2019-11",
+   "KR_CPI": 99.481,
+   "KR_PPI": 100.37,
+   "US_CPI": null,
+   "US_CORE": null,
+   "US_PPI": null,
+   "US_PPI_CORE": null,
+   "KR_CORE": null
+  },
+  {
+   "month": "2019-12",
+   "KR_CPI": 99.719,
+   "KR_PPI": 100.65,
+   "US_CPI": null,
+   "US_CORE": null,
+   "US_PPI": null,
+   "US_PPI_CORE": null,
+   "KR_CORE": null
+  },
+  {
+   "month": "2020-01",
+   "KR_CPI": 100.09,
+   "KR_PPI": 101.02,
+   "US_CPI": null,
+   "US_CORE": null,
+   "US_PPI": null,
+   "US_PPI_CORE": null,
+   "KR_CORE": null
+  },
+  {
+   "month": "2020-02",
+   "KR_CPI": 100.16,
+   "KR_PPI": 100.69,
+   "US_CPI": null,
+   "US_CORE": null,
+   "US_PPI": null,
+   "US_PPI_CORE": null,
+   "KR_CORE": null
+  },
+  {
+   "month": "2020-03",
+   "KR_CPI": 99.94,
+   "KR_PPI": 99.8,
+   "US_CPI": null,
+   "US_CORE": null,
+   "US_PPI": null,
+   "US_PPI_CORE": null,
+   "KR_CORE": null
+  },
+  {
+   "month": "2020-04",
+   "KR_CPI": 99.5,
+   "KR_PPI": 98.93,
+   "US_CPI": null,
+   "US_CORE": null,
+   "US_PPI": null,
+   "US_PPI_CORE": null,
+   "KR_CORE": null
+  },
+  {
+   "month": "2020-05",
+   "KR_CPI": 99.44,
+   "KR_PPI": 98.96,
+   "US_CPI": null,
+   "US_CORE": null,
+   "US_PPI": null,
+   "US_PPI_CORE": null,
+   "KR_CORE": null
+  },
+  {
+   "month": "2020-06",
+   "KR_CPI": 99.71,
+   "KR_PPI": 99.47,
+   "US_CPI": null,
+   "US_CORE": null,
+   "US_PPI": null,
+   "US_PPI_CORE": null,
+   "KR_CORE": null
+  },
+  {
+   "month": "2020-07",
+   "KR_CPI": 99.63,
+   "KR_PPI": 99.69,
+   "US_CPI": null,
+   "US_CORE": null,
+   "US_PPI": null,
+   "US_PPI_CORE": null,
+   "KR_CORE": null
+  },
+  {
+   "month": "2020-08",
+   "KR_CPI": 100.19,
+   "KR_PPI": 100.18,
+   "US_CPI": null,
+   "US_CORE": null,
+   "US_PPI": null,
+   "US_PPI_CORE": null,
+   "KR_CORE": null
+  },
+  {
+   "month": "2020-09",
+   "KR_CPI": 100.74,
+   "KR_PPI": 100.38,
+   "US_CPI": null,
+   "US_CORE": null,
+   "US_PPI": null,
+   "US_PPI_CORE": null,
+   "KR_CORE": null
+  },
+  {
+   "month": "2020-10",
+   "KR_CPI": 100.18,
+   "KR_PPI": 99.98,
+   "US_CPI": null,
+   "US_CORE": null,
+   "US_PPI": null,
+   "US_PPI_CORE": null,
+   "KR_CORE": null
+  },
+  {
+   "month": "2020-11",
+   "KR_CPI": 100.09,
+   "KR_PPI": 100.06,
+   "US_CPI": null,
+   "US_CORE": null,
+   "US_PPI": null,
+   "US_PPI_CORE": null,
+   "KR_CORE": null
+  },
+  {
+   "month": "2020-12",
+   "KR_CPI": 100.33,
+   "KR_PPI": 100.84,
+   "US_CPI": null,
+   "US_CORE": null,
+   "US_PPI": null,
+   "US_PPI_CORE": null,
+   "KR_CORE": null
+  },
+  {
+   "month": "2021-01",
+   "KR_CPI": 101.04,
+   "KR_PPI": 101.96,
+   "US_CPI": null,
+   "US_CORE": null,
+   "US_PPI": null,
+   "US_PPI_CORE": null,
+   "KR_CORE": null
+  },
+  {
+   "month": "2021-02",
+   "KR_CPI": 101.58,
+   "KR_PPI": 102.8,
+   "US_CPI": null,
+   "US_CORE": null,
+   "US_PPI": null,
+   "US_PPI_CORE": null,
+   "KR_CORE": null
+  },
+  {
+   "month": "2021-03",
+   "KR_CPI": 101.84,
+   "KR_PPI": 103.89,
+   "US_CPI": null,
+   "US_CORE": null,
+   "US_PPI": null,
+   "US_PPI_CORE": null,
+   "KR_CORE": null
+  },
+  {
+   "month": "2021-04",
+   "KR_CPI": 101.98,
+   "KR_PPI": 104.88,
+   "US_CPI": null,
+   "US_CORE": null,
+   "US_PPI": null,
+   "US_PPI_CORE": null,
+   "KR_CORE": null
+  },
+  {
+   "month": "2021-05",
+   "KR_CPI": 102.05,
+   "KR_PPI": 105.45,
+   "US_CPI": null,
+   "US_CORE": null,
+   "US_PPI": null,
+   "US_PPI_CORE": null,
+   "KR_CORE": null
+  },
+  {
+   "month": "2021-06",
+   "KR_CPI": 102.05,
+   "KR_PPI": 106.01,
+   "US_CPI": null,
+   "US_CORE": null,
+   "US_PPI": null,
+   "US_PPI_CORE": null,
+   "KR_CORE": null
+  },
+  {
+   "month": "2021-07",
+   "KR_CPI": 102.26,
+   "KR_PPI": 107.04,
+   "US_CPI": null,
+   "US_CORE": null,
+   "US_PPI": null,
+   "US_PPI_CORE": null,
+   "KR_CORE": null
+  },
+  {
+   "month": "2021-08",
+   "KR_CPI": 102.75,
+   "KR_PPI": 107.6,
+   "US_CPI": null,
+   "US_CORE": null,
+   "US_PPI": null,
+   "US_PPI_CORE": null,
+   "KR_CORE": null
+  },
+  {
+   "month": "2021-09",
+   "KR_CPI": 103.17,
+   "KR_PPI": 108.0,
+   "US_CPI": null,
+   "US_CORE": null,
+   "US_PPI": null,
+   "US_PPI_CORE": null,
+   "KR_CORE": null
+  },
+  {
+   "month": "2021-10",
+   "KR_CPI": 103.35,
+   "KR_PPI": 109.12,
+   "US_CPI": null,
+   "US_CORE": null,
+   "US_PPI": null,
+   "US_PPI_CORE": null,
+   "KR_CORE": null
+  },
+  {
+   "month": "2021-11",
+   "KR_CPI": 103.87,
+   "KR_PPI": 109.9,
+   "US_CPI": null,
+   "US_CORE": null,
+   "US_PPI": null,
+   "US_PPI_CORE": null,
+   "KR_CORE": null
+  },
+  {
+   "month": "2021-12",
+   "KR_CPI": 104.04,
+   "KR_PPI": 109.88,
+   "US_CPI": null,
+   "US_CORE": null,
+   "US_PPI": null,
+   "US_PPI_CORE": null,
+   "KR_CORE": null
+  },
+  {
+   "month": "2022-01",
+   "KR_CPI": 104.85,
+   "KR_PPI": 111.04,
+   "US_CPI": null,
+   "US_CORE": null,
+   "US_PPI": null,
+   "US_PPI_CORE": null,
+   "KR_CORE": null
+  },
+  {
+   "month": "2022-02",
+   "KR_CPI": 105.42,
+   "KR_PPI": 111.57,
+   "US_CPI": null,
+   "US_CORE": null,
+   "US_PPI": null,
+   "US_PPI_CORE": null,
+   "KR_CORE": null
+  },
+  {
+   "month": "2022-03",
+   "KR_CPI": 106.1,
+   "KR_PPI": 113.27,
+   "US_CPI": null,
+   "US_CORE": null,
+   "US_PPI": null,
+   "US_PPI_CORE": null,
+   "KR_CORE": null
+  },
+  {
+   "month": "2022-04",
+   "KR_CPI": 106.83,
+   "KR_PPI": 115.1,
+   "US_CPI": null,
+   "US_CORE": null,
+   "US_PPI": null,
+   "US_PPI_CORE": null,
+   "KR_CORE": null
+  },
+  {
+   "month": "2022-05",
+   "KR_CPI": 107.5,
+   "KR_PPI": 115.92,
+   "US_CPI": null,
+   "US_CORE": null,
+   "US_PPI": null,
+   "US_PPI_CORE": null,
+   "KR_CORE": null
+  },
+  {
+   "month": "2022-06",
+   "KR_CPI": 108.21,
+   "KR_PPI": 116.57,
+   "US_CPI": null,
+   "US_CORE": null,
+   "US_PPI": null,
+   "US_PPI_CORE": null,
+   "KR_CORE": null
+  },
+  {
+   "month": "2022-07",
+   "KR_CPI": 108.73,
+   "KR_PPI": 116.9,
+   "US_CPI": null,
+   "US_CORE": null,
+   "US_PPI": null,
+   "US_PPI_CORE": null,
+   "KR_CORE": null
+  },
+  {
+   "month": "2022-08",
+   "KR_CPI": 108.63,
+   "KR_PPI": 116.45,
+   "US_CPI": null,
+   "US_CORE": null,
+   "US_PPI": null,
+   "US_PPI_CORE": null,
+   "KR_CORE": null
+  },
+  {
+   "month": "2022-09",
+   "KR_CPI": 108.82,
+   "KR_PPI": 116.53,
+   "US_CPI": null,
+   "US_CORE": null,
+   "US_PPI": null,
+   "US_PPI_CORE": null,
+   "KR_CORE": null
+  },
+  {
+   "month": "2022-10",
+   "KR_CPI": 109.16,
+   "KR_PPI": 117.13,
+   "US_CPI": null,
+   "US_CORE": null,
+   "US_PPI": null,
+   "US_PPI_CORE": null,
+   "KR_CORE": null
+  },
+  {
+   "month": "2022-11",
+   "KR_CPI": 109.07,
+   "KR_PPI": 116.75,
+   "US_CPI": null,
+   "US_CORE": null,
+   "US_PPI": null,
+   "US_PPI_CORE": null,
+   "KR_CORE": null
+  },
+  {
+   "month": "2022-12",
+   "KR_CPI": 109.26,
+   "KR_PPI": 116.27,
+   "US_CPI": null,
+   "US_CORE": null,
+   "US_PPI": null,
+   "US_PPI_CORE": null,
+   "KR_CORE": null
+  },
+  {
+   "month": "2023-01",
+   "KR_CPI": 110.07,
+   "KR_PPI": 116.69,
+   "US_CPI": null,
+   "US_CORE": null,
+   "US_PPI": null,
+   "US_PPI_CORE": null,
+   "KR_CORE": null
+  },
+  {
+   "month": "2023-02",
+   "KR_CPI": 110.33,
+   "KR_PPI": 116.91,
+   "US_CPI": null,
+   "US_CORE": null,
+   "US_PPI": null,
+   "US_PPI_CORE": null,
+   "KR_CORE": null
+  },
+  {
+   "month": "2023-03",
+   "KR_CPI": 110.52,
+   "KR_PPI": 117.05,
+   "US_CPI": null,
+   "US_CORE": null,
+   "US_PPI": null,
+   "US_PPI_CORE": null,
+   "KR_CORE": null
+  },
+  {
+   "month": "2023-04",
+   "KR_CPI": 110.77,
+   "KR_PPI": 116.96,
+   "US_CPI": null,
+   "US_CORE": null,
+   "US_PPI": null,
+   "US_PPI_CORE": null,
+   "KR_CORE": null
+  },
+  {
+   "month": "2023-05",
+   "KR_CPI": 111.13,
+   "KR_PPI": 116.53,
+   "US_CPI": null,
+   "US_CORE": null,
+   "US_PPI": null,
+   "US_PPI_CORE": null,
+   "KR_CORE": null
+  },
+  {
+   "month": "2023-06",
+   "KR_CPI": 111.16,
+   "KR_PPI": 116.27,
+   "US_CPI": null,
+   "US_CORE": null,
+   "US_PPI": null,
+   "US_PPI_CORE": null,
+   "KR_CORE": null
+  },
+  {
+   "month": "2023-07",
+   "KR_CPI": 111.29,
+   "KR_PPI": 116.53,
+   "US_CPI": null,
+   "US_CORE": null,
+   "US_PPI": null,
+   "US_PPI_CORE": null,
+   "KR_CORE": null
+  },
+  {
+   "month": "2023-08",
+   "KR_CPI": 112.28,
+   "KR_PPI": 117.5,
+   "US_CPI": null,
+   "US_CORE": null,
+   "US_PPI": null,
+   "US_PPI_CORE": null,
+   "KR_CORE": null
+  },
+  {
+   "month": "2023-09",
+   "KR_CPI": 112.85,
+   "KR_PPI": 118.03,
+   "US_CPI": null,
+   "US_CORE": null,
+   "US_PPI": null,
+   "US_PPI_CORE": null,
+   "KR_CORE": null
+  },
+  {
+   "month": "2023-10",
+   "KR_CPI": 113.27,
+   "KR_PPI": 117.86,
+   "US_CPI": null,
+   "US_CORE": null,
+   "US_PPI": null,
+   "US_PPI_CORE": null,
+   "KR_CORE": null
+  },
+  {
+   "month": "2023-11",
+   "KR_CPI": 112.68,
+   "KR_PPI": 117.41,
+   "US_CPI": null,
+   "US_CORE": null,
+   "US_PPI": null,
+   "US_PPI_CORE": null,
+   "KR_CORE": null
+  },
+  {
+   "month": "2023-12",
+   "KR_CPI": 112.73,
+   "KR_PPI": 117.56,
+   "US_CPI": null,
+   "US_CORE": null,
+   "US_PPI": null,
+   "US_PPI_CORE": null,
+   "KR_CORE": null
+  },
+  {
+   "month": "2024-01",
+   "KR_CPI": 113.17,
+   "KR_PPI": 118.19,
+   "US_CPI": null,
+   "US_CORE": null,
+   "US_PPI": null,
+   "US_PPI_CORE": null,
+   "KR_CORE": null
+  },
+  {
+   "month": "2024-02",
+   "KR_CPI": 113.78,
+   "KR_PPI": 118.55,
+   "US_CPI": null,
+   "US_CORE": null,
+   "US_PPI": null,
+   "US_PPI_CORE": null,
+   "KR_CORE": null
+  },
+  {
+   "month": "2024-03",
+   "KR_CPI": 113.95,
+   "KR_PPI": 118.82,
+   "US_CPI": null,
+   "US_CORE": null,
+   "US_PPI": null,
+   "US_PPI_CORE": null,
+   "KR_CORE": null
+  },
+  {
+   "month": "2024-04",
+   "KR_CPI": 114.01,
+   "KR_PPI": 119.16,
+   "US_CPI": null,
+   "US_CORE": null,
+   "US_PPI": null,
+   "US_PPI_CORE": null,
+   "KR_CORE": null
+  },
+  {
+   "month": "2024-05",
+   "KR_CPI": 114.1,
+   "KR_PPI": 119.25,
+   "US_CPI": null,
+   "US_CORE": null,
+   "US_PPI": null,
+   "US_PPI_CORE": null,
+   "KR_CORE": null
+  },
+  {
+   "month": "2024-06",
+   "KR_CPI": 113.84,
+   "KR_PPI": 119.23,
+   "US_CPI": null,
+   "US_CORE": null,
+   "US_PPI": null,
+   "US_PPI_CORE": null,
+   "KR_CORE": null
+  },
+  {
+   "month": "2024-07",
+   "KR_CPI": 114.13,
+   "KR_PPI": 119.56,
+   "US_CPI": null,
+   "US_CORE": null,
+   "US_PPI": null,
+   "US_PPI_CORE": null,
+   "KR_CORE": null
+  },
+  {
+   "month": "2024-08",
+   "KR_CPI": 114.54,
+   "KR_PPI": 119.38,
+   "US_CPI": null,
+   "US_CORE": null,
+   "US_PPI": null,
+   "US_PPI_CORE": null,
+   "KR_CORE": null
+  },
+  {
+   "month": "2024-09",
+   "KR_CPI": 114.65,
+   "KR_PPI": 119.16,
+   "US_CPI": null,
+   "US_CORE": null,
+   "US_PPI": null,
+   "US_PPI_CORE": null,
+   "KR_CORE": null
+  },
+  {
+   "month": "2024-10",
+   "KR_CPI": 114.69,
+   "KR_PPI": 119.01,
+   "US_CPI": null,
+   "US_CORE": null,
+   "US_PPI": null,
+   "US_PPI_CORE": null,
+   "KR_CORE": null
+  },
+  {
+   "month": "2024-11",
+   "KR_CPI": 114.4,
+   "KR_PPI": 119.1,
+   "US_CPI": null,
+   "US_CORE": null,
+   "US_PPI": null,
+   "US_PPI_CORE": null,
+   "KR_CORE": null
+  },
+  {
+   "month": "2024-12",
+   "KR_CPI": 114.91,
+   "KR_PPI": 119.52,
+   "US_CPI": null,
+   "US_CORE": null,
+   "US_PPI": null,
+   "US_PPI_CORE": null,
+   "KR_CORE": null
+  },
+  {
+   "month": "2025-01",
+   "KR_CPI": 115.71,
+   "KR_PPI": 120.27,
+   "US_CPI": null,
+   "US_CORE": null,
+   "US_PPI": null,
+   "US_PPI_CORE": null,
+   "KR_CORE": null
+  },
+  {
+   "month": "2025-02",
+   "KR_CPI": 116.08,
+   "KR_PPI": 120.33,
+   "US_CPI": null,
+   "US_CORE": null,
+   "US_PPI": null,
+   "US_PPI_CORE": null,
+   "KR_CORE": null
+  },
+  {
+   "month": "2025-03",
+   "KR_CPI": 116.29,
+   "KR_PPI": 120.36,
+   "US_CPI": null,
+   "US_CORE": null,
+   "US_PPI": null,
+   "US_PPI_CORE": null,
+   "KR_CORE": null
+  },
+  {
+   "month": "2025-04",
+   "KR_CPI": 116.38,
+   "KR_PPI": 120.14,
+   "US_CPI": null,
+   "US_CORE": null,
+   "US_PPI": null,
+   "US_PPI_CORE": null,
+   "KR_CORE": null
+  },
+  {
+   "month": "2025-05",
+   "KR_CPI": 116.27,
+   "KR_PPI": 119.64,
+   "US_CPI": null,
+   "US_CORE": null,
+   "US_PPI": null,
+   "US_PPI_CORE": null,
+   "KR_CORE": null
+  },
+  {
+   "month": "2025-06",
+   "KR_CPI": 116.31,
+   "KR_PPI": 119.77,
+   "US_CPI": null,
+   "US_CORE": null,
+   "US_PPI": null,
+   "US_PPI_CORE": null,
+   "KR_CORE": null
+  },
+  {
+   "month": "2025-07",
+   "KR_CPI": 116.52,
+   "KR_PPI": 120.19,
+   "US_CPI": null,
+   "US_CORE": null,
+   "US_PPI": null,
+   "US_PPI_CORE": null,
+   "KR_CORE": null
+  },
+  {
+   "month": "2025-08",
+   "KR_CPI": 116.45,
+   "KR_PPI": 120.11,
+   "US_CPI": null,
+   "US_CORE": null,
+   "US_PPI": null,
+   "US_PPI_CORE": null,
+   "KR_CORE": null
+  },
+  {
+   "month": "2025-09",
+   "KR_CPI": 117.06,
+   "KR_PPI": 120.54,
+   "US_CPI": null,
+   "US_CORE": null,
+   "US_PPI": null,
+   "US_PPI_CORE": null,
+   "KR_CORE": null
+  },
+  {
+   "month": "2025-10",
+   "KR_CPI": 117.42,
+   "KR_PPI": 120.94,
+   "US_CPI": null,
+   "US_CORE": null,
+   "US_PPI": null,
+   "US_PPI_CORE": null,
+   "KR_CORE": null
+  },
+  {
+   "month": "2025-11",
+   "KR_CPI": 117.2,
+   "KR_PPI": 121.31,
+   "US_CPI": null,
+   "US_CORE": null,
+   "US_PPI": null,
+   "US_PPI_CORE": null,
+   "KR_CORE": null
+  },
+  {
+   "month": "2025-12",
+   "KR_CPI": 117.57,
+   "KR_PPI": 121.76,
+   "US_CPI": null,
+   "US_CORE": null,
+   "US_PPI": null,
+   "US_PPI_CORE": null,
+   "KR_CORE": null
+  },
+  {
+   "month": "2026-01",
+   "KR_CPI": 118.03,
+   "KR_PPI": 122.56,
+   "US_CPI": null,
+   "US_CORE": null,
+   "US_PPI": null,
+   "US_PPI_CORE": null,
+   "KR_CORE": null
+  },
+  {
+   "month": "2026-02",
+   "KR_CPI": 118.4,
+   "KR_PPI": 123.28,
+   "US_CPI": null,
+   "US_CORE": null,
+   "US_PPI": null,
+   "US_PPI_CORE": null,
+   "KR_CORE": null
+  },
+  {
+   "month": "2026-03",
+   "KR_CPI": 118.8,
+   "KR_PPI": 125.35,
+   "US_CPI": null,
+   "US_CORE": null,
+   "US_PPI": null,
+   "US_PPI_CORE": null,
+   "KR_CORE": null
+  },
+  {
+   "month": "2026-04",
+   "KR_CPI": 119.37,
+   "KR_PPI": 128.75,
+   "US_CPI": null,
+   "US_CORE": null,
+   "US_PPI": null,
+   "US_PPI_CORE": null,
+   "KR_CORE": null
+  },
+  {
+   "month": "2026-05",
+   "KR_CPI": 119.92,
+   "KR_PPI": 129.98,
+   "US_CPI": null,
+   "US_CORE": null,
+   "US_PPI": null,
+   "US_PPI_CORE": null,
+   "KR_CORE": null
+  },
+  {
+   "month": "2026-06",
+   "KR_CPI": 119.99,
+   "KR_PPI": 129.92,
+   "US_CPI": null,
+   "US_CORE": null,
+   "US_PPI": null,
+   "US_PPI_CORE": null,
+   "KR_CORE": null
+  },
+  {
+   "month": "2026-07",
+   "KR_CPI": 119.77,
+   "KR_PPI": 129.43,
+   "US_CPI": null,
+   "US_CORE": null,
+   "US_PPI": null,
+   "US_PPI_CORE": null,
+   "KR_CORE": null
+  },
+  {
+   "month": "2026-08",
+   "KR_CPI": 120.05,
+   "KR_PPI": 129.58,
+   "US_CPI": null,
+   "US_CORE": null,
+   "US_PPI": null,
+   "US_PPI_CORE": null,
+   "KR_CORE": null
+  },
+  {
+   "month": "2026-09",
+   "KR_CPI": 120.43,
+   "KR_PPI": 129.78,
+   "US_CPI": null,
+   "US_CORE": null,
+   "US_PPI": null,
+   "US_PPI_CORE": null,
+   "KR_CORE": null
+  }
+ ]
+}
