@@ -1,11 +1,8 @@
 {
- "fetched_at": "2026-10-25T21:31+09:00",
+ "fetched_at": "2026-10-25T21:32+09:00",
  "errors": [
-  "US_CPI: The read operation timed out",
-  "US_CORE: The read operation timed out",
-  "US_PPI: The read operation timed out",
-  "US_PPI_CORE: The read operation timed out",
-  "KR_CORE: 해당하는 데이터가 없습니다."
+  "BLS: HTTP Error 503: Service Unavailable",
+  "KR_CORE: item code not found"
  ],
  "latest": {
   "US_CPI": null,
