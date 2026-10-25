@@ -1,15 +1,23 @@
 name: probe (임시)
 on: workflow_dispatch
+permissions:
+  contents: write
 jobs:
   p:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
       - env:
           ECOS_KEY: ${{ secrets.ECOS_KEY }}
         run: |
+          exec > probe.txt 2>&1
           UA="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126 Safari/537.36"
           for u in "https://api.bls.gov/publicAPI/v2/timeseries/data/CUSR0000SA0" "https://fred.stlouisfed.org/graph/fredgraph.csv?id=CPIAUCSL&cosd=2026-01-01" "https://download.bls.gov/pub/time.series/cu/cu.data.1.AllItems"; do
             echo "== $u"; curl -sS -m 60 -A "$UA" -o out.txt -w "%{http_code}\n" "$u"; head -c 300 out.txt; echo; done
           curl -sS -m 60 "https://ecos.bok.or.kr/api/StatisticItemList/$ECOS_KEY/json/kr/1/1000/901Y009" | python3 -c "
           import json,sys; d=json.load(sys.stdin); 
           [print(r['ITEM_CODE'],r['ITEM_NAME'],r.get('CYCLE'),r.get('P_ITEM_CODE')) for r in d.get('StatisticItemList',{}).get('row',[]) if '제외' in r['ITEM_NAME'] or r.get('P_ITEM_CODE') in (None,'')][:40]" || true
+      - run: |
+          sed -i "s/${{ secrets.ECOS_KEY }}/KEY/g" probe.txt || true
+          git config user.name bot; git config user.email bot@users.noreply.github.com
+          git add probe.txt; git commit -m probe; git push
