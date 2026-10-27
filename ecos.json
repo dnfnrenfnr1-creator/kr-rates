@@ -1,17 +1,7 @@
 {
- "fetched_at": "2026-10-26T08:24+09:00",
+ "fetched_at": "2026-10-27T09:39+09:00",
  "errors": [],
  "rows": [
-  {
-   "date": "2026-09-26",
-   "KR_BASE": 3.0,
-   "KR_CD91": null,
-   "KR_3Y": null,
-   "KR_10Y": null,
-   "KR_AA3Y": null,
-   "KR_BBB3Y": null,
-   "USDKRW": null
-  },
   {
    "date": "2026-09-27",
    "KR_BASE": 3.0,
@@ -281,6 +271,26 @@
    "KR_AA3Y": 4.492,
    "KR_BBB3Y": 10.308,
    "USDKRW": 1324.6
+  },
+  {
+   "date": "2026-10-24",
+   "KR_BASE": 3.0,
+   "KR_CD91": null,
+   "KR_3Y": null,
+   "KR_10Y": null,
+   "KR_AA3Y": null,
+   "KR_BBB3Y": null,
+   "USDKRW": null
+  },
+  {
+   "date": "2026-10-26",
+   "KR_CD91": 3.26,
+   "KR_3Y": 3.789,
+   "KR_10Y": 4.074,
+   "KR_AA3Y": 4.476,
+   "KR_BBB3Y": 10.29,
+   "USDKRW": 1324.3,
+   "KR_BASE": null
   }
  ]
 }
