@@ -36,13 +36,34 @@ for col, (stat, item) in SERIES.items():
 # 월별 물가지수 (2020=100)
 MONTHLY = {
     "KR_CPI":  ("901Y009", "0"),     # 소비자물가 총지수
-    "KR_CORE": ("901Y009", "QB"),    # 농산물및석유류제외
+    "KR_CORE": None,                 # 농산물및석유류제외 — 코드는 아래에서 자동으로 찾음
     "KR_PPI":  ("404Y014", "*AA"),   # 생산자물가 총지수
 }
+def find_item(keyword, stats=("901Y010", "901Y009")):
+    """ECOS 항목 목록에서 이름에 keyword가 들어간 월별 항목 코드를 찾는다."""
+    for stat in stats:
+        url = f"https://ecos.bok.or.kr/api/StatisticItemList/{KEY}/json/kr/1/2000/{stat}"
+        try:
+            with urllib.request.urlopen(url, timeout=30) as r:
+                items = json.load(r).get("StatisticItemList", {}).get("row", [])
+        except Exception:
+            continue
+        for it in items:
+            name = (it.get("ITEM_NAME") or "").replace(" ", "")
+            if keyword in name and it.get("CYCLE") == "M":
+                print(f"{keyword} → {stat}/{it['ITEM_CODE']} ({it['ITEM_NAME']})")
+                return (stat, it["ITEM_CODE"])
+    return None
+
+MONTHLY["KR_CORE"] = find_item("농산물및석유류제외")
 mstart = (today.replace(day=1) - dt.timedelta(days=730)).strftime("%Y%m")
 mend = today.strftime("%Y%m")
 mrows, merrors = {}, []
-for col, (stat, item) in MONTHLY.items():
+for col, spec in MONTHLY.items():
+    if spec is None:
+        merrors.append(f"{col}: 항목 코드를 못 찾음")
+        continue
+    stat, item = spec
     url = f"https://ecos.bok.or.kr/api/StatisticSearch/{KEY}/json/kr/1/100/{stat}/M/{mstart}/{mend}/{item}"
     try:
         with urllib.request.urlopen(url, timeout=30) as r:
