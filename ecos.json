@@ -1,8 +1,6 @@
 {
- "fetched_at": "2026-11-11T21:14+09:00",
- "errors": [
-  "KR_CORE: 해당하는 데이터가 없습니다."
- ],
+ "fetched_at": "2026-11-11T21:20+09:00",
+ "errors": [],
  "rows": [
   {
    "date": "2026-10-12",
@@ -319,145 +317,145 @@
   {
    "date": "2024-11-01",
    "KR_CPI": 114.4,
-   "KR_PPI": 119.1,
-   "KR_CORE": null
+   "KR_CORE": 113.19,
+   "KR_PPI": 119.1
   },
   {
    "date": "2024-12-01",
    "KR_CPI": 114.91,
-   "KR_PPI": 119.52,
-   "KR_CORE": null
+   "KR_CORE": 113.46,
+   "KR_PPI": 119.52
   },
   {
    "date": "2025-01-01",
    "KR_CPI": 115.71,
-   "KR_PPI": 120.27,
-   "KR_CORE": null
+   "KR_CORE": 113.98,
+   "KR_PPI": 120.27
   },
   {
    "date": "2025-02-01",
    "KR_CPI": 116.08,
-   "KR_PPI": 120.33,
-   "KR_CORE": null
+   "KR_CORE": 114.12,
+   "KR_PPI": 120.33
   },
   {
    "date": "2025-03-01",
    "KR_CPI": 116.29,
-   "KR_PPI": 120.36,
-   "KR_CORE": null
+   "KR_CORE": 114.37,
+   "KR_PPI": 120.36
   },
   {
    "date": "2025-04-01",
    "KR_CPI": 116.38,
-   "KR_PPI": 120.14,
-   "KR_CORE": null
+   "KR_CORE": 114.86,
+   "KR_PPI": 120.14
   },
   {
    "date": "2025-05-01",
    "KR_CPI": 116.27,
-   "KR_PPI": 119.64,
-   "KR_CORE": null
+   "KR_CORE": 115.06,
+   "KR_PPI": 119.64
   },
   {
    "date": "2025-06-01",
    "KR_CPI": 116.31,
-   "KR_PPI": 119.77,
-   "KR_CORE": null
+   "KR_CORE": 115.25,
+   "KR_PPI": 119.77
   },
   {
    "date": "2025-07-01",
    "KR_CPI": 116.52,
-   "KR_PPI": 120.19,
-   "KR_CORE": null
+   "KR_CORE": 115.29,
+   "KR_PPI": 120.19
   },
   {
    "date": "2025-08-01",
    "KR_CPI": 116.45,
-   "KR_PPI": 120.11,
-   "KR_CORE": null
+   "KR_CORE": 114.84,
+   "KR_PPI": 120.11
   },
   {
    "date": "2025-09-01",
    "KR_CPI": 117.06,
-   "KR_PPI": 120.54,
-   "KR_CORE": null
+   "KR_CORE": 115.56,
+   "KR_PPI": 120.54
   },
   {
    "date": "2025-10-01",
    "KR_CPI": 117.42,
-   "KR_PPI": 120.94,
-   "KR_CORE": null
+   "KR_CORE": 116.0,
+   "KR_PPI": 120.94
   },
   {
    "date": "2025-11-01",
    "KR_CPI": 117.2,
-   "KR_PPI": 121.31,
-   "KR_CORE": null
+   "KR_CORE": 115.82,
+   "KR_PPI": 121.31
   },
   {
    "date": "2025-12-01",
    "KR_CPI": 117.57,
-   "KR_PPI": 121.76,
-   "KR_CORE": null
+   "KR_CORE": 116.02,
+   "KR_PPI": 121.76
   },
   {
    "date": "2026-01-01",
    "KR_CPI": 118.03,
-   "KR_PPI": 122.56,
-   "KR_CORE": null
+   "KR_CORE": 116.56,
+   "KR_PPI": 122.56
   },
   {
    "date": "2026-02-01",
    "KR_CPI": 118.4,
-   "KR_PPI": 123.28,
-   "KR_CORE": null
+   "KR_CORE": 116.93,
+   "KR_PPI": 123.28
   },
   {
    "date": "2026-03-01",
    "KR_CPI": 118.8,
-   "KR_PPI": 125.35,
-   "KR_CORE": null
+   "KR_CORE": 117.0,
+   "KR_PPI": 125.35
   },
   {
    "date": "2026-04-01",
    "KR_CPI": 119.37,
-   "KR_PPI": 128.75,
-   "KR_CORE": null
+   "KR_CORE": 117.38,
+   "KR_PPI": 128.75
   },
   {
    "date": "2026-05-01",
    "KR_CPI": 119.92,
-   "KR_PPI": 129.98,
-   "KR_CORE": null
+   "KR_CORE": 117.97,
+   "KR_PPI": 129.98
   },
   {
    "date": "2026-06-01",
    "KR_CPI": 119.99,
-   "KR_PPI": 129.92,
-   "KR_CORE": null
+   "KR_CORE": 118.06,
+   "KR_PPI": 129.92
   },
   {
    "date": "2026-07-01",
    "KR_CPI": 119.77,
-   "KR_PPI": 129.43,
-   "KR_CORE": null
+   "KR_CORE": 118.18,
+   "KR_PPI": 129.43
   },
   {
    "date": "2026-08-01",
    "KR_CPI": 120.05,
-   "KR_PPI": 129.58,
-   "KR_CORE": null
+   "KR_CORE": 118.42,
+   "KR_PPI": 129.58
   },
   {
    "date": "2026-09-01",
    "KR_CPI": 120.43,
-   "KR_PPI": 129.78,
-   "KR_CORE": null
+   "KR_CORE": 118.71,
+   "KR_PPI": 129.78
   },
   {
    "date": "2026-10-01",
    "KR_CPI": 120.73,
-   "KR_CORE": null,
+   "KR_CORE": 119.22,
    "KR_PPI": null
   }
  ]
