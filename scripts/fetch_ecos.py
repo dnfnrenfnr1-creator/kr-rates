@@ -1,4 +1,4 @@
-"""한국은행 ECOS에서 한국 금리·환율 최근 30일치를 받아 ecos.json으로 저장."""
+"""한국은행 ECOS에서 한국 금리·환율 최근 30일치와 물가지수 최근 24개월치를 받아 ecos.json으로 저장."""
 import json, os, sys, urllib.request, datetime as dt
 from zoneinfo import ZoneInfo
 
@@ -33,6 +33,36 @@ for col, (stat, item) in SERIES.items():
     except Exception as e:
         errors.append(f"{col}: {e}")
 
+# 월별 물가지수 (2020=100)
+MONTHLY = {
+    "KR_CPI":  ("901Y009", "0"),     # 소비자물가 총지수
+    "KR_CORE": ("901Y009", "QB"),    # 농산물및석유류제외
+    "KR_PPI":  ("404Y014", "*AA"),   # 생산자물가 총지수
+}
+mstart = (today.replace(day=1) - dt.timedelta(days=730)).strftime("%Y%m")
+mend = today.strftime("%Y%m")
+mrows, merrors = {}, []
+for col, (stat, item) in MONTHLY.items():
+    url = f"https://ecos.bok.or.kr/api/StatisticSearch/{KEY}/json/kr/1/100/{stat}/M/{mstart}/{mend}/{item}"
+    try:
+        with urllib.request.urlopen(url, timeout=30) as r:
+            body = json.load(r)
+        data = body.get("StatisticSearch", {}).get("row", [])
+        if not data:
+            merrors.append(f"{col}: {body.get('RESULT', {}).get('MESSAGE', 'no rows')}")
+        for x in data:
+            t = x["TIME"]
+            d = f"{t[:4]}-{t[4:6]}-01"
+            v = x.get("DATA_VALUE")
+            mrows.setdefault(d, {"date": d})[col] = float(v) if v not in (None, "") else None
+    except Exception as e:
+        merrors.append(f"{col}: {e}")
+monthly = []
+for d in sorted(mrows):
+    for col in MONTHLY:
+        mrows[d].setdefault(col, None)
+    monthly.append(mrows[d])
+
 out = []
 for d in sorted(rows):
     r = rows[d]
@@ -42,7 +72,7 @@ for d in sorted(rows):
 
 with open("ecos.json", "w", encoding="utf-8") as f:
     json.dump({"fetched_at": dt.datetime.now(ZoneInfo("Asia/Seoul")).isoformat(timespec="minutes"),
-               "errors": errors, "rows": out}, f, ensure_ascii=False, indent=1)
-print(f"{len(out)} rows, errors: {errors}")
+               "errors": errors + merrors, "rows": out, "monthly": monthly}, f, ensure_ascii=False, indent=1)
+print(f"{len(out)} rows, {len(monthly)} monthly, errors: {errors + merrors}")
 if len(errors) == len(SERIES):
     sys.exit(1)
