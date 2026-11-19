@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-19T09:19+09:00",
+ "fetched_at": "2026-11-19T11:49+09:00",
  "errors": [],
  "rows": [
   {
@@ -301,6 +301,16 @@
    "KR_BBB3Y": 10.236,
    "USDKRW": 1338.8,
    "KR_BASE": null
+  },
+  {
+   "date": "2026-11-19",
+   "USDKRW": 1331.1,
+   "KR_BASE": null,
+   "KR_CD91": null,
+   "KR_3Y": null,
+   "KR_10Y": null,
+   "KR_AA3Y": null,
+   "KR_BBB3Y": null
   }
  ],
  "monthly": [
