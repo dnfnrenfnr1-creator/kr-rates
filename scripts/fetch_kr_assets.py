@@ -5,7 +5,8 @@
 - 한국투자증권(실전투자): 현재가·전일대비·52주 고저·PER·PBR, 주간 종가(약 2년)
 - DART: 최근 사업보고서 주요계정(매출액·영업이익·당기순이익, 3개년), 최근 90일 공시 목록
   ETF처럼 DART 고유번호가 없는 종목은 재무·공시를 건너뛴다.
-필요한 Secrets: KIS_APP_KEY, KIS_APP_SECRET, DART_KEY
+- ECOS: 원/달러 매매기준율(731Y001 / 0000001) 최근 영업일 값 — 현황판 달러 자산 원화 환산용
+필요한 Secrets: KIS_APP_KEY, KIS_APP_SECRET, DART_KEY, ECOS_KEY
 """
 import io, json, os, re, time, zipfile, urllib.request, urllib.parse, datetime as dt
 import xml.etree.ElementTree as ET
@@ -18,7 +19,7 @@ DART = "https://opendart.fss.or.kr/api"
 
 errors = []
 out = {"fetched_at": NOW.strftime("%Y-%m-%dT%H:%M+09:00"), "errors": errors,
-       "quotes": [], "weekly": [], "financials": [], "disclosures": []}
+       "quotes": [], "weekly": [], "financials": [], "disclosures": [], "fx": []}
 
 
 def http(url, data=None, headers=None, timeout=40):
@@ -183,14 +184,37 @@ def fetch_dart(codes, kis_names):
     out["financials"].sort(key=lambda r: (r["code"], r["year"]))
 
 
+# ---------- ECOS 원/달러 ----------
+def fetch_fx():
+    key = os.environ.get("ECOS_KEY")
+    if not key:
+        errors.append("ECOS: ECOS_KEY 없음")
+        return
+    start = (NOW - dt.timedelta(days=20)).strftime("%Y%m%d")
+    url = f"https://ecos.bok.or.kr/api/StatisticSearch/{key}/json/kr/1/40/731Y001/D/{start}/{NOW.strftime('%Y%m%d')}/0000001"
+    try:
+        body = json.loads(http(url))
+        rows = body.get("StatisticSearch", {}).get("row", [])
+        if not rows:
+            errors.append(f"ECOS 환율: {body.get('RESULT', {}).get('MESSAGE') or '데이터 없음'}")
+        for r in rows:
+            t, v = r.get("TIME") or "", num(r.get("DATA_VALUE"))
+            if len(t) == 8 and v:
+                out["fx"].append({"date": f"{t[:4]}-{t[4:6]}-{t[6:]}", "usdkrw": v})
+        out["fx"].sort(key=lambda r: r["date"])
+    except Exception as e:
+        errors.append(f"ECOS 환율: {e}")
+
+
 codes = load_tickers()
-out["secrets_seen"] = {k: bool(os.environ.get(k)) for k in ("KIS_APP_KEY", "KIS_APP_SECRET", "DART_KEY")}
+out["secrets_seen"] = {k: bool(os.environ.get(k)) for k in ("KIS_APP_KEY", "KIS_APP_SECRET", "DART_KEY", "ECOS_KEY")}
+fetch_fx()
 out["codes"] = codes
 if codes:
     names = fetch_kis(codes)
     fetch_dart(codes, names)
 with open("kr_assets.json", "w", encoding="utf-8") as f:
     json.dump(out, f, ensure_ascii=False, indent=1)
-print(f"종목 {len(codes)}개, 시세 {len(out['quotes'])}, 주간 {len(out['weekly'])}, 재무 {len(out['financials'])}, 공시 {len(out['disclosures'])}, 오류 {len(errors)}")
+print(f"환율 {len(out['fx'])}일, 종목 {len(codes)}개, 시세 {len(out['quotes'])}, 주간 {len(out['weekly'])}, 재무 {len(out['financials'])}, 공시 {len(out['disclosures'])}, 오류 {len(errors)}")
 for e in errors:
     print("  -", e)
