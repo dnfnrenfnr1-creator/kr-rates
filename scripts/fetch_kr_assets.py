@@ -184,6 +184,7 @@ def fetch_dart(codes, kis_names):
 
 
 codes = load_tickers()
+out["secrets_seen"] = {k: bool(os.environ.get(k)) for k in ("KIS_APP_KEY", "KIS_APP_SECRET", "DART_KEY")}
 out["codes"] = codes
 if codes:
     names = fetch_kis(codes)
