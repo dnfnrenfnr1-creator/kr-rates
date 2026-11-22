@@ -1,0 +1,41 @@
+name: 국내 보유 종목 시세·DART 받기
+
+on:
+  schedule:
+    # 장 마감(15:30) 뒤 하루 한 번. 예약 실행이 늦거나 빠질 때를 대비해 한 번 더 돈다.
+    - cron: "23 9 * * 1-5"    # 한국시간 평일 18:23
+    - cron: "41 10 * * 1-5"   # 한국시간 평일 19:41 (예비)
+  workflow_dispatch:           # Actions 탭에서 수동 실행 가능
+  push:
+    paths: ["kr_tickers.txt"]  # 종목 목록이 바뀌면 바로 한 번 받기
+
+permissions:
+  contents: write
+
+concurrency:              # ECOS 작업과 push가 겹치지 않게 같은 그룹으로 차례로 돌린다
+  group: ecos
+  cancel-in-progress: false
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: 한국투자증권 시세 + DART
+        env:
+          KIS_APP_KEY: ${{ secrets.KIS_APP_KEY }}
+          KIS_APP_SECRET: ${{ secrets.KIS_APP_SECRET }}
+          DART_KEY: ${{ secrets.DART_KEY }}
+        run: python scripts/fetch_kr_assets.py
+      - name: 커밋
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add kr_assets.json
+          git diff --cached --quiet && exit 0
+          git commit -m "국내 종목 갱신 $(TZ=Asia/Seoul date +%F)"
+          git pull --rebase origin main
+          git push
