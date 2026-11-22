@@ -1,9 +1,14 @@
 {
- "fetched_at": "2026-11-22T20:25+09:00",
- "errors": [],
+ "fetched_at": "2026-11-22T20:46+09:00",
+ "errors": [
+  "KIS: KIS_APP_KEY / KIS_APP_SECRET 없음",
+  "DART: DART_KEY 없음"
+ ],
  "quotes": [],
  "weekly": [],
  "financials": [],
  "disclosures": [],
- "codes": []
+ "codes": [
+  "005930"
+ ]
 }
