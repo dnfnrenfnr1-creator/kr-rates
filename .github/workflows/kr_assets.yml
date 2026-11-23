@@ -7,7 +7,7 @@ on:
     - cron: "41 10 * * 1-5"   # 한국시간 평일 19:41 (예비)
   workflow_dispatch:           # Actions 탭에서 수동 실행 가능
   push:
-    paths: ["kr_tickers.txt", "scripts/fetch_kr_assets.py"]  # 종목 목록·스크립트가 바뀌면 바로 한 번 받기
+    paths: ["kr_tickers.txt", "scripts/fetch_kr_assets.py", ".kr_request"]  # 종목 목록·스크립트가 바뀌거나 현황판 예약 작업이 요청하면 바로 한 번 받기
 
 permissions:
   contents: write
