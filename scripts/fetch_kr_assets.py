@@ -245,6 +245,14 @@ out["codes"] = codes
 if codes:
     names = fetch_kis(codes)
     fetch_dart(codes, names)
+# 혹시라도 오류 문구에 키 값이 섞이면 가린다(이 파일은 공개 저장소에 올라감)
+_secrets = [v for v in (os.environ.get(k) for k in ("KIS_APP_KEY", "KIS_APP_SECRET", "DART_KEY", "ECOS_KEY")) if v and len(v) >= 6]
+def _scrub(t):
+    t = str(t)
+    for v in _secrets:
+        t = t.replace(v, "***")
+    return t
+out["errors"] = errors[:] = [_scrub(e) for e in errors]
 with open("kr_assets.json", "w", encoding="utf-8") as f:
     json.dump(out, f, ensure_ascii=False, indent=1)
 print(f"환율 {len(out['fx'])}일, 종목 {len(codes)}개, 시세 {len(out['quotes'])}, 주간 {len(out['weekly'])}, 재무 {len(out['financials'])}, 공시 {len(out['disclosures'])}, 오류 {len(errors)}")
