@@ -100,6 +100,9 @@ def fetch_kis(codes):
         try:
             p = kis_get("/uapi/domestic-stock/v1/quotations/inquire-price", "FHKST01010100",
                         {"FID_COND_MRKT_DIV_CODE": "J", "FID_INPUT_ISCD": c}, token, key, secret).get("output") or {}
+            if not num(p.get("stck_prpr")) and not names.get(c):
+                errors.append(f"KIS 시세 {c}: 시세가 없어요(종목코드를 확인해 주세요. 영문 O와 숫자 0이 헷갈리기 쉬워요)")
+                continue
             out["quotes"].append({
                 "code": c, "name": names.get(c) or c, "price": num(p.get("stck_prpr")),
                 "change": num(p.get("prdy_vrss")), "changePct": num(p.get("prdy_ctrt")),
