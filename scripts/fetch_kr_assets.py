@@ -3,6 +3,7 @@
 - 종목 목록: kr_tickers.txt (한 줄에 6자리 종목코드 하나, # 뒤는 주석)
   자산관리 현황판 입력판의 '국내 주식' 종목코드와 맞춰 둔다.
 - 한국투자증권(실전투자): 현재가·전일대비·52주 고저·PER·PBR, 주간 종가(약 2년)
+  접근토큰은 하루 1회 발급이 원칙이라, 같은 날 이미 받은 시세가 있으면 토큰을 새로 받지 않고 재사용한다.
 - DART: 최근 사업보고서 주요계정(매출액·영업이익·당기순이익, 3개년), 최근 90일 공시 목록
   ETF처럼 DART 고유번호가 없는 종목은 재무·공시를 건너뛴다.
 - ECOS: 원/달러 매매기준율(731Y001 / 0000001) 최근 영업일 값 — 현황판 달러 자산 원화 환산용
@@ -70,7 +71,32 @@ def kis_get(path, tr_id, params, token, key, secret):
     return res
 
 
+def reuse_today(codes):
+    """오늘(한국시간) 이미 받은 KIS 시세가 있고 종목이 그대로면 재사용한다. 토큰을 하루 1번만 발급하기 위해서."""
+    try:
+        with open("kr_assets.json", encoding="utf-8") as f:
+            prev = json.load(f)
+    except Exception:
+        return None
+    if str(prev.get("kis_date") or "") != NOW.strftime("%Y-%m-%d"):
+        return None
+    have = {q.get("code") for q in prev.get("quotes") or []} | set(prev.get("kis_missing") or [])
+    if not set(codes) <= have:
+        return None
+    return prev
+
+
 def fetch_kis(codes):
+    prev = reuse_today(codes)
+    if prev is not None:
+        out["quotes"] = [q for q in prev.get("quotes") or [] if q.get("code") in codes]
+        out["weekly"] = [w for w in prev.get("weekly") or [] if w.get("code") in codes]
+        out["kis_date"] = prev.get("kis_date")
+        out["kis_missing"] = [c for c in prev.get("kis_missing") or [] if c in codes]
+        out["kis_reused"] = True
+        for c in out["kis_missing"]:
+            errors.append(f"KIS 시세 {c}: 시세가 없어요(종목코드를 확인해 주세요. 영문 O와 숫자 0이 헷갈리기 쉬워요)")
+        return {q["code"]: q.get("name") for q in out["quotes"]}
     key, secret = os.environ.get("KIS_APP_KEY"), os.environ.get("KIS_APP_SECRET")
     if not (key and secret):
         errors.append("KIS: KIS_APP_KEY / KIS_APP_SECRET 없음")
@@ -80,6 +106,8 @@ def fetch_kis(codes):
     except Exception as e:
         errors.append(f"KIS: {e}")
         return {}
+    out["kis_date"] = NOW.strftime("%Y-%m-%d")
+    out["kis_missing"] = []
     names = {}
     start = (NOW - dt.timedelta(days=730)).strftime("%Y%m%d")
     end = NOW.strftime("%Y%m%d")
@@ -102,6 +130,7 @@ def fetch_kis(codes):
                         {"FID_COND_MRKT_DIV_CODE": "J", "FID_INPUT_ISCD": c}, token, key, secret).get("output") or {}
             if not num(p.get("stck_prpr")) and not names.get(c):
                 errors.append(f"KIS 시세 {c}: 시세가 없어요(종목코드를 확인해 주세요. 영문 O와 숫자 0이 헷갈리기 쉬워요)")
+                out["kis_missing"].append(c)
                 continue
             out["quotes"].append({
                 "code": c, "name": names.get(c) or c, "price": num(p.get("stck_prpr")),

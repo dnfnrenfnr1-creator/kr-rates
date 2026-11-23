@@ -1,10 +1,8 @@
 name: 국내 보유 종목 시세·DART 받기
 
 on:
-  schedule:
-    # 장 마감(15:30) 뒤 하루 한 번. 예약 실행이 늦거나 빠질 때를 대비해 한 번 더 돈다.
-    - cron: "23 9 * * 1-5"    # 한국시간 평일 18:23
-    - cron: "41 10 * * 1-5"   # 한국시간 평일 19:41 (예비)
+  # 예약 실행(schedule)은 쓰지 않는다. 한국투자증권 토큰은 하루 1회 발급이 원칙이라,
+  # 현황판 예약 작업(평일 20:37)이 .kr_request 를 바꿔 하루 한 번만 깨운다.
   workflow_dispatch:           # Actions 탭에서 수동 실행 가능
   push:
     paths: ["kr_tickers.txt", "scripts/fetch_kr_assets.py", ".kr_request"]  # 종목 목록·스크립트가 바뀌거나 현황판 예약 작업이 요청하면 바로 한 번 받기
